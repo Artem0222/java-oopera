@@ -12,7 +12,7 @@ public class Theatre {
         Director director2 = new Director("Стивен", "Спилберг", Gender.MALE, 10);
 
         String musicAutor = "Моцарт";
-        String choreograph = "Афанасий";
+        Person choreograph = new Person("Афанасий", "Петров", Gender.MALE);
 
         Show show1 = new Show("Гамлет", 180, director1, new ArrayList<>());
 

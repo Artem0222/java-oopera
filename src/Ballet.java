@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 
 public class Ballet extends MusicalShow{
-    private String choreograph;
+    protected Person choreograph;
 
     public Ballet (String title, int duration, Director director, String musicAuthor, String librettoText,
-                    ArrayList<Actor> listOfActors, String choreograph) {
+                    ArrayList<Actor> listOfActors, Person choreograph) {
         super(title, duration, director, musicAuthor, librettoText, listOfActors);
         this.choreograph = choreograph;
     }
-    public String getChoreograph() {
+    public Person getChoreograph() {
+
         return choreograph;
     }
     @Override
